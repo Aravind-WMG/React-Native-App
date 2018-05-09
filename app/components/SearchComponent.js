@@ -34,12 +34,14 @@ export class SearchComponent extends Component {
       })
       this.setState({
         dataSource: newData,
-        text: text
+        text: text,
+        activeSearch : true
       })
     }
     else {
       this.setState({
         text: '',
+        activeSearch : false
       })
     }
 
@@ -81,9 +83,6 @@ export class SearchComponent extends Component {
             placeholder="Type Here..."
             lightTheme
             round
-            onFocus={() => this.setState({ focus: true })}
-            onBlur={() => this.setState({ focus: false })}
-            clearIcon={this.state.focus}
             onChangeText={(text) => this.SearchFilterFunction(text)}
             value={this.state.text} />
 
