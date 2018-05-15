@@ -11,20 +11,20 @@ export class HeaderComponent extends React.Component{
             <View style={styles.navBar}>
                 <View style={styles.navBarLeft}>
                     <TouchableOpacity>
-                        <Icon name="menu" size={40}/>
+                        <Icon name="menu" size={30} color='#000'/>
                     </TouchableOpacity>
                     <Image 
-                        source={require('../images/logo_kohls.png')} 
-                        style={{width:180,height:27,backgroundColor:'#000'}}
+                        source={require('../images/logo_new.png')} 
+                        style={styles.imageStyle}
                     />
                 </View>
                 <View style={styles.navBarRight}>
-                    <Text style={styles.userName}>Hi, UserName</Text>
+                    <Text style={styles.userName}>Hi, Daisy</Text>
                     <TouchableOpacity>
-                        <Icon name="account-circle" size={40}/>
+                        <Icon name="account-circle" size={40} color='#000' style={styles.accountCircle}/>
                     </TouchableOpacity>
                     <TouchableOpacity>
-                        <Icon name="shopping-cart" size={40}/>
+                        <Icon name="shopping-cart" size={35} color='#000'/>
                     </TouchableOpacity>
                 </View>
             </View>
@@ -34,26 +34,38 @@ export class HeaderComponent extends React.Component{
 const styles = StyleSheet.create({
     navBar: {
       height: 75,
-      backgroundColor: '#fff',
-      elevation:3,
       flexDirection:'row',
       alignItems:'center',
+      flex:1
       
     },
     navBarLeft: {
         flexDirection:'row',
-        justifyContent:'space-between',
         alignItems:'center',
+        justifyContent:'flex-start',
+        flex:1,
+        paddingLeft:5
     },
     navBarRight: {
         flexDirection:'row',
         alignItems:'center',
-        paddingLeft:20,
-        justifyContent:'space-between',
+        justifyContent:'flex-end',
+        flex:1,
+        paddingRight:10
+    },
+    imageStyle:{
+        width:180,
+        height:27,
+        backgroundColor:'#fff',
+        marginHorizontal:20,
     },
     userName:{
         color:'#000',
-        fontSize: 14,
+        fontSize: 16,
         fontWeight: 'bold',
+        paddingRight:5,
+    },
+    accountCircle:{
+        paddingRight:10,
     }
   });
