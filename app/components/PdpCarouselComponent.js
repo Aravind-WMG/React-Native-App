@@ -1,17 +1,18 @@
 import React from 'react';
 import { Text, View, StyleSheet, Dimensions, Image, Alert } from 'react-native';
-import Carousel from 'react-native-snap-carousel';
-import { sampleCarouselData } from '../data/DummyData';
+import Carousel,{ Pagination } from 'react-native-snap-carousel';
+import { sampleSingleProductDetail } from '../data/DummyData';
 import Imageprogressive from 'react-native-image-progress';
 import ProgressBar from 'react-native-progress/Bar';
 
 //const { height, width } = Dimensions.get('window');
 
-export class CarouselComponent extends React.Component {
+export class PdpCarouselComponent extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            carouselData: sampleCarouselData,
+            carouselData: sampleSingleProductDetail,
+            activeSlide:0,
             viewport: {
                 width: Dimensions.get('window').width,
                 height: Dimensions.get('window').height
@@ -22,7 +23,27 @@ export class CarouselComponent extends React.Component {
     componentDidMount() {
         //Alert.alert("Hey");
     }
-
+    get pagination () {
+        const { carouselData, activeSlide } = this.state;
+        return (
+            <Pagination
+              dotsLength={carouselData[0].singlePdtDetail.visualNavTile.length}
+              activeDotIndex={activeSlide}
+              dotStyle={{
+                  width: 10,
+                  height: 10,
+                  borderRadius: 5,
+                  marginHorizontal: 1,
+                  backgroundColor: 'rgba(0, 0, 0, 0.92)'
+              }}
+              inactiveDotStyle={{
+                  // Define styles for inactive dots here
+              }}
+              inactiveDotOpacity={0.4}
+              inactiveDotScale={1}
+            />
+        );
+    }
     renderItem = ({ item, index }) => {
         return (
             <View style={styles.carouselWrapper}>
@@ -31,13 +52,12 @@ export class CarouselComponent extends React.Component {
                     source={{ uri: item.imageUrl }}
                     indicator={ProgressBar.Pie}
                     indicatorProps={{
-                        size: 20,
+                        size: 40,
                         borderWidth: 0,
                         color: 'rgba(150, 150, 150, 1)',
                         unfilledColor: 'rgba(200, 200, 200, 0.2)'
                     }}
                 />
-                <Text style={styles.logoTitle}>{item.navLabel}</Text>
             </View>
         );
     }
@@ -53,18 +73,18 @@ export class CarouselComponent extends React.Component {
                         }
                     });
                 }}>
-                <Text style={styles.carouselTitle}>Shop By Fit</Text>
                 <Carousel
                     inactiveSlideOpacity={1}
                     inactiveSlideScale={1}
                     firstItem={0}
                     sliderWidth={this.state.viewport.width}
-                    itemWidth={this.state.viewport.width / 2.5}
+                    itemWidth={this.state.viewport.width}
                     activeSlideAlignment={'start'}
-                    data={this.state.carouselData[0].visualNavTiles.visualNavTile}
+                    data={this.state.carouselData[0].singlePdtDetail.visualNavTile}
                     renderItem={this.renderItem}
-                    enableMomentum={true}
+                    onSnapToItem={(index) => this.setState({ activeSlide: index }) }
                 />
+                { this.pagination }
             </View>
 
         )
@@ -77,33 +97,15 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         alignItems: 'center',
         backgroundColor: '#fff',
-        borderRadius: 5,
-        borderWidth: 1,
-        borderColor: '#000',
-        marginRight: 8
+        justifyContent:'center'
     },
     mainWrapper: {
-        paddingVertical: 20,
+        paddingVertical: 0,
         flex: 1
     },
-    carouselTitle: {
-        color: '#000',
-        fontSize: 20,
-        fontWeight: 'bold',
-        textAlign: 'center',
-        paddingBottom: 15
-    },
     logoStyle: {
-        width: 50,
-        height: 50,
-        borderRadius: 10,
+      width:320,
+      height:320
     },
-    logoTitle: {
-        fontSize: 16,
-        fontWeight: 'bold',
-        textAlign: 'center',
-        width: '75%',
-        flex: 1, 
-        flexWrap: 'wrap'
-    }
+    
 });

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { StyleSheet, View, Platform, Alert } from 'react-native';
-import { CarouselComponent } from './CarouselComponent';
+import { PmpCarouselComponent } from './PmpCarouselComponent';
 import { DropdownComponent } from './DropdownComponent'
 import { ProductLayoutComponent } from './ProductLayoutCompmonet'
 
@@ -23,10 +23,10 @@ export class ProductComponent extends Component {
           <DropdownComponent onDropDownSelect={this.handleDropDownChange} />
         </View>
         <View style={styles.crouselContainer}>
-          <CarouselComponent />
+          <PmpCarouselComponent />
         </View>
         <View style={styles.productContainer}>
-          <ProductLayoutComponent dropDownValForFilter={this.state.dropDownVal}/>
+          <ProductLayoutComponent nav1={this.props.nav} dropDownValForFilter={this.state.dropDownVal}/>
         </View>
       </View>
     );

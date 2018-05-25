@@ -68,7 +68,7 @@ export class DropdownComponent extends Component {
         if (rowID == 4) return true;
         let key = rowID;
         return (
-            <View style={styles.dropdown_2_separator} key={key} />);
+            <View style={styles.dropdownSeparator} key={key} />);
     }
 
     componentDidMount() {
@@ -146,7 +146,7 @@ const styles = StyleSheet.create({
         paddingBottom: 5,
         color: '#000',
     },
-    dropdown_2_separator: {
+    dropdownSeparator: {
         height: 1,
         backgroundColor: '#000',
     }

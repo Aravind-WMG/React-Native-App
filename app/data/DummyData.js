@@ -52,7 +52,8 @@ export const sampleProductDetail = [{
             "black": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1",
             "white": "https://media.kohlsimg.com/is/image/kohls/396327_White?wid=155&hei=155&op_sharpen=1"
         }],
-        "star_count": 100
+        "star_count": 100,
+        "pdt_id": 1
     },
     {
         "pdt_image": "https://media.kohlsimg.com/is/image/kohls/1989834_Desperado?wid=155&hei=155&op_sharpen=1",
@@ -67,7 +68,8 @@ export const sampleProductDetail = [{
             "black": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1",
             "white": "https://media.kohlsimg.com/is/image/kohls/396327_White?wid=155&hei=155&op_sharpen=1"
         }],
-        "star_count": 200
+        "star_count": 200,
+        "pdt_id": 1
     },
     {
         "pdt_image": "https://media.kohlsimg.com/is/image/kohls/2310989_Cash?wid=155&hei=155&op_sharpen=1",
@@ -82,7 +84,8 @@ export const sampleProductDetail = [{
             "black": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1",
             "white": "https://media.kohlsimg.com/is/image/kohls/396327_White?wid=155&hei=155&op_sharpen=1"
         }],
-        "star_count": 10
+        "star_count": 10,
+        "pdt_id": 1
     },
     {
         "pdt_image": "https://media.kohlsimg.com/is/image/kohls/2582621_Stealth?wid=155&hei=155&op_sharpen=1",
@@ -97,7 +100,8 @@ export const sampleProductDetail = [{
             "black": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1",
             "white": "https://media.kohlsimg.com/is/image/kohls/396327_White?wid=155&hei=155&op_sharpen=1"
         }],
-        "star_count": 2030
+        "star_count": 2030,
+        "pdt_id": 1
     },
     {
         "pdt_image": "https://media.kohlsimg.com/is/image/kohls/2946240_Black?wid=155&hei=155&op_sharpen=1",
@@ -112,7 +116,8 @@ export const sampleProductDetail = [{
             "black": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1",
             "white": "https://media.kohlsimg.com/is/image/kohls/396327_White?wid=155&hei=155&op_sharpen=1"
         }],
-        "star_count": 138
+        "star_count": 138,
+        "pdt_id": 1
     },
     {
         "pdt_image": "https://media.kohlsimg.com/is/image/kohls/2946017_Bebop?wid=155&hei=155&op_sharpen=1",
@@ -127,7 +132,8 @@ export const sampleProductDetail = [{
             "black": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1",
             "white": "https://media.kohlsimg.com/is/image/kohls/396327_White?wid=155&hei=155&op_sharpen=1"
         }],
-        "star_count": 100
+        "star_count": 100,
+        "pdt_id": 1
     },
     {
         "pdt_image": "https://media.kohlsimg.com/is/image/kohls/5172_Stonewash?wid=155&hei=155&op_sharpen=1",
@@ -142,7 +148,8 @@ export const sampleProductDetail = [{
             "black": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1",
             "white": "https://media.kohlsimg.com/is/image/kohls/396327_White?wid=155&hei=155&op_sharpen=1"
         }],
-        "star_count": 100
+        "star_count": 100,
+        "pdt_id": 1
     },
     {
         "pdt_image": "https://media.kohlsimg.com/is/image/kohls/5178_Bleach?wid=155&hei=155&op_sharpen=1",
@@ -157,7 +164,8 @@ export const sampleProductDetail = [{
             "black": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1",
             "white": "https://media.kohlsimg.com/is/image/kohls/396327_White?wid=155&hei=155&op_sharpen=1"
         }],
-        "star_count": 100
+        "star_count": 100,
+        "pdt_id": 1
     },
     {
         "pdt_image": "https://media.kohlsimg.com/is/image/kohls/1989834_Desperado?wid=155&hei=155&op_sharpen=1",
@@ -172,7 +180,8 @@ export const sampleProductDetail = [{
             "black": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1",
             "white": "https://media.kohlsimg.com/is/image/kohls/396327_White?wid=155&hei=155&op_sharpen=1"
         }],
-        "star_count": 100
+        "star_count": 100,
+        "pdt_id": 1
     },
     {
         "pdt_image": "https://media.kohlsimg.com/is/image/kohls/323407_Black_Stretch?wid=155&hei=155&op_sharpen=1",
@@ -187,7 +196,8 @@ export const sampleProductDetail = [{
             "black": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1",
             "white": "https://media.kohlsimg.com/is/image/kohls/396327_White?wid=155&hei=155&op_sharpen=1"
         }],
-        "star_count": 100
+        "star_count": 100,
+        "pdt_id": 1
     },
     {
         "pdt_image": "https://media.kohlsimg.com/is/image/kohls/381312_Rugged?wid=155&hei=155&op_sharpen=1",
@@ -202,7 +212,8 @@ export const sampleProductDetail = [{
             "black": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1",
             "white": "https://media.kohlsimg.com/is/image/kohls/396327_White?wid=155&hei=155&op_sharpen=1"
         }],
-        "star_count": 100
+        "star_count": 100,
+        "pdt_id": 1
     },
     {
         "pdt_image": "https://media.kohlsimg.com/is/image/kohls/2582621_Stealth?wid=155&hei=155&op_sharpen=1",
@@ -217,7 +228,8 @@ export const sampleProductDetail = [{
             "black": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1",
             "white": "https://media.kohlsimg.com/is/image/kohls/396327_White?wid=155&hei=155&op_sharpen=1"
         }],
-        "star_count": 100
+        "star_count": 100,
+        "pdt_id": 1
     },
     {
         "pdt_image": "https://media.kohlsimg.com/is/image/kohls/2143062_Black?wid=155&hei=155&op_sharpen=1",
@@ -232,7 +244,8 @@ export const sampleProductDetail = [{
             "black": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1",
             "white": "https://media.kohlsimg.com/is/image/kohls/396327_White?wid=155&hei=155&op_sharpen=1"
         }],
-        "star_count": 100
+        "star_count": 100,
+        "pdt_id": 1
     },
     {
         "pdt_image": "https://media.kohlsimg.com/is/image/kohls/2946240_Black?wid=155&hei=155&op_sharpen=1",
@@ -247,7 +260,8 @@ export const sampleProductDetail = [{
             "black": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1",
             "white": "https://media.kohlsimg.com/is/image/kohls/396327_White?wid=155&hei=155&op_sharpen=1"
         }],
-        "star_count": 100
+        "star_count": 100,
+        "pdt_id": 1
     },
     {
         "pdt_image": "https://media.kohlsimg.com/is/image/kohls/2225626_Haggard?wid=155&hei=155&op_sharpen=1",
@@ -262,7 +276,8 @@ export const sampleProductDetail = [{
             "black": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1",
             "white": "https://media.kohlsimg.com/is/image/kohls/396327_White?wid=155&hei=155&op_sharpen=1"
         }],
-        "star_count": 100
+        "star_count": 100,
+        "pdt_id": 1
     },
     {
         "pdt_image": "https://media.kohlsimg.com/is/image/kohls/2946017_Bebop?wid=155&hei=155&op_sharpen=1",
@@ -277,7 +292,8 @@ export const sampleProductDetail = [{
             "black": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1",
             "white": "https://media.kohlsimg.com/is/image/kohls/396327_White?wid=155&hei=155&op_sharpen=1"
         }],
-        "star_count": 100
+        "star_count": 100,
+        "pdt_id": 1
     },
     {
         "pdt_image": "https://media.kohlsimg.com/is/image/kohls/186075_Tumbled_Rigid?wid=155&hei=155&op_sharpen=1",
@@ -292,7 +308,8 @@ export const sampleProductDetail = [{
             "black": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1",
             "white": "https://media.kohlsimg.com/is/image/kohls/396327_White?wid=155&hei=155&op_sharpen=1"
         }],
-        "star_count": 100
+        "star_count": 100,
+        "pdt_id": 1
     },
     {
         "pdt_image": "https://media.kohlsimg.com/is/image/kohls/250792_Indigo?wid=155&hei=155&op_sharpen=1",
@@ -307,7 +324,8 @@ export const sampleProductDetail = [{
             "black": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1",
             "white": "https://media.kohlsimg.com/is/image/kohls/396327_White?wid=155&hei=155&op_sharpen=1"
         }],
-        "star_count": 100
+        "star_count": 100,
+        "pdt_id": 1
     },
     {
         "pdt_image": "https://media.kohlsimg.com/is/image/kohls/397582_Overhaul?wid=155&hei=155&op_sharpen=1",
@@ -322,7 +340,8 @@ export const sampleProductDetail = [{
             "black": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1",
             "white": "https://media.kohlsimg.com/is/image/kohls/396327_White?wid=155&hei=155&op_sharpen=1"
         }],
-        "star_count": 100
+        "star_count": 100,
+        "pdt_id": 1
     },
     {
         "pdt_image": "https://media.kohlsimg.com/is/image/kohls/2483201_Steely_Blue?wid=155&hei=155&op_sharpen=1",
@@ -337,7 +356,8 @@ export const sampleProductDetail = [{
             "black": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1",
             "white": "https://media.kohlsimg.com/is/image/kohls/396327_White?wid=155&hei=155&op_sharpen=1"
         }],
-        "star_count": 100
+        "star_count": 100,
+        "pdt_id": 1
     },
     {
         "pdt_image": "https://media.kohlsimg.com/is/image/kohls/222816_Dark_Stone?wid=155&hei=155&op_sharpen=1",
@@ -352,7 +372,8 @@ export const sampleProductDetail = [{
             "black": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1",
             "white": "https://media.kohlsimg.com/is/image/kohls/396327_White?wid=155&hei=155&op_sharpen=1"
         }],
-        "star_count": 100
+        "star_count": 100,
+        "pdt_id": 1
     },
     {
         "pdt_image": "https://media.kohlsimg.com/is/image/kohls/246897_Subzero?wid=155&hei=155&op_sharpen=1",
@@ -367,7 +388,8 @@ export const sampleProductDetail = [{
             "black": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1",
             "white": "https://media.kohlsimg.com/is/image/kohls/396327_White?wid=155&hei=155&op_sharpen=1"
         }],
-        "star_count": 100
+        "star_count": 100,
+        "pdt_id": 1
     },
     {
         "pdt_image": "https://media.kohlsimg.com/is/image/kohls/242775_Shoestring?wid=155&hei=155&op_sharpen=1",
@@ -382,7 +404,8 @@ export const sampleProductDetail = [{
             "black": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1",
             "white": "https://media.kohlsimg.com/is/image/kohls/396327_White?wid=155&hei=155&op_sharpen=1"
         }],
-        "star_count": 100
+        "star_count": 100,
+        "pdt_id": 1
     },
     {
         "pdt_image": "https://media.kohlsimg.com/is/image/kohls/16070_Dark_Stone_Wash?wid=155&hei=155&op_sharpen=1",
@@ -397,7 +420,8 @@ export const sampleProductDetail = [{
             "black": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1",
             "white": "https://media.kohlsimg.com/is/image/kohls/396327_White?wid=155&hei=155&op_sharpen=1"
         }],
-        "star_count": 100
+        "star_count": 100,
+        "pdt_id": 1
     },
     {
         "pdt_image": "https://media.kohlsimg.com/is/image/kohls/771271_Bebop?wid=155&hei=155&op_sharpen=1",
@@ -412,7 +436,8 @@ export const sampleProductDetail = [{
             "black": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1",
             "white": "https://media.kohlsimg.com/is/image/kohls/396327_White?wid=155&hei=155&op_sharpen=1"
         }],
-        "star_count": 100
+        "star_count": 100,
+        "pdt_id": 1
     },
     {
         "pdt_image": "https://media.kohlsimg.com/is/image/kohls/2087699_Midnight?wid=155&hei=155&op_sharpen=1",
@@ -427,7 +452,8 @@ export const sampleProductDetail = [{
             "black": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1",
             "white": "https://media.kohlsimg.com/is/image/kohls/396327_White?wid=155&hei=155&op_sharpen=1"
         }],
-        "star_count": 100
+        "star_count": 100,
+        "pdt_id": 1
     },
     {
         "pdt_image": "https://media.kohlsimg.com/is/image/kohls/462961_Jet?wid=155&hei=155&op_sharpen=1",
@@ -442,7 +468,8 @@ export const sampleProductDetail = [{
             "black": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1",
             "white": "https://media.kohlsimg.com/is/image/kohls/396327_White?wid=155&hei=155&op_sharpen=1"
         }],
-        "star_count": 100
+        "star_count": 100,
+        "pdt_id": 1
     },
     {
         "pdt_image": "https://media.kohlsimg.com/is/image/kohls/1732474_Rigid_Indigo?wid=155&hei=155&op_sharpen=1",
@@ -457,8 +484,68 @@ export const sampleProductDetail = [{
             "black": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1",
             "white": "https://media.kohlsimg.com/is/image/kohls/396327_White?wid=155&hei=155&op_sharpen=1"
         }],
-        "star_count": 100
+        "star_count": 100,
+        "pdt_id": 1
     }
     ]
 
 }]
+
+export const sampleSingleProductDetail = [{
+    "singlePdtDetail": {
+        "pdt_id": 1,
+        "visualNavTile": [{
+            "imageUrl": "https://media.kohlsimg.com/is/image/kohls/2582621_Stealth?wid=320&hei=320&op_sharpen=1"
+        },
+        {
+            "imageUrl": "https://media.kohlsimg.com/is/image/kohls/2225626_Haggard?wid=320&hei=320&op_sharpen=1"
+        },
+        {
+            "imageUrl": "https://media.kohlsimg.com/is/image/kohls/246897_Subzero?wid=320&hei=320&op_sharpen=1"
+
+        }
+        ],
+        "sale_price": "$39.99",
+        "reg_price": "$59.50",
+        "pdt_name": "Men's Levi's® 501™  Fit Stretch Jeans",
+        "star": 4.2,
+        "star_count": 1020,
+
+    }
+}]
+
+export const sampleYouMayLikeThisDetail = [{
+    "youMayLikeThisDetail": [{
+        "imageUrl": "https://media.kohlsimg.com/is/image/kohls/1989834_Desperado?wid=155&hei=155&op_sharpen=1",
+        "sale_price": "$39.99",
+        "pdt_name": "Men's Levi's® 501™  Fit Stretch Jeans",
+        "star": 4,
+        "star_count": 200,
+        "pdt_id": 1,
+    }, {
+        "imageUrl": "https://media.kohlsimg.com/is/image/kohls/250792_Indigo?wid=155&hei=155&op_sharpen=1",
+        "sale_price": "$39.99",
+        "pdt_name": "Men's Levi's® 501™  Fit Stretch Jeans",
+        "star": 2,
+        "star_count": 20,
+        "pdt_id": 1
+    }, {
+        "imageUrl": "https://media.kohlsimg.com/is/image/kohls/462961_Jet?wid=155&hei=155&op_sharpen=1",
+        "sale_price": "$39.99",
+        "pdt_name": "Men's Levi's® 501™  Fit Stretch Jeans",
+        "star": 3,
+        "star_count": 300,
+        "pdt_id": 1
+    }, {
+        "imageUrl": "https://media.kohlsimg.com/is/image/kohls/771271_Bebop?wid=155&hei=155&op_sharpen=1",
+        "sale_price": "$39.99",
+        "pdt_name": "Men's Levi's® 501™  Fit Stretch Jeans",
+        "star": 4,
+        "star_count": 800,
+        "pdt_id": 1
+    }]
+}]
+
+export const sampleSizeOptions = ["13", "14", "15", "16","17","18"];
+
+export const sampleColorOptions = ["Black", "Red", "White", "Blue","Violet","Indigo","Green","Yellow","Orange"];

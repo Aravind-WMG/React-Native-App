@@ -2,7 +2,7 @@ import React from 'react';
 import {Text, View, StyleSheet, Image,TouchableOpacity } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
-export class HeaderComponent extends React.Component{
+export class PmpHeaderComponent extends React.Component{
     constructor(props){
         super(props);
     }

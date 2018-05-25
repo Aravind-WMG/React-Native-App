@@ -1,18 +1,20 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { StyleSheet, View, ActivityIndicator, FlatList, Text, Image, Alert, YellowBox, TouchableOpacity } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import Imageprogressive from 'react-native-image-progress';
 import ProgressBar from 'react-native-progress/Bar';
 import { sampleProductDetail } from '../data/DummyData';
 import { Rating } from 'react-native-elements';
+import { NavigationActions  } from 'react-navigation';
 
-export class ProductLayoutComponent extends Component {
+export class ProductLayoutComponent extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             isLoading: true,
             dataSource: sampleProductDetail[0].product_details,
             dropDownValForFilter:this.props.dropDownValForFilter,
+            navigation: this.props.nav1
         }
         YellowBox.ignoreWarnings([
             'Warning: componentWillMount is deprecated',
@@ -21,7 +23,13 @@ export class ProductLayoutComponent extends Component {
     }
 
     getItem(pdt_name) {
-        Alert.alert(pdt_name);
+        const navigateAction = NavigationActions.navigate({
+            routeName: 'PDP',
+            params: {
+                title:pdt_name
+            },
+          });
+        this.state.navigation.dispatch(navigateAction);
     }
 
     FlatListItemSeparator = () => {
@@ -126,7 +134,7 @@ export class ProductLayoutComponent extends Component {
                                 />
                                 <Text style={styles.salePrice}>Sale {item.sale_price}</Text>
                                 <Text style={styles.originalPrice}>Reg {item.reg_price}</Text>
-                                <Text onPress={this.getItem.bind(this, item.pdt_name)}
+                                <Text onPress={this.getItem.bind(this,item.pdt_name)}
                                     style={styles.textView} >
                                     {item.pdt_name}
                                 </Text>
