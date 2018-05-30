@@ -5,30 +5,44 @@ import Imageprogressive from 'react-native-image-progress';
 import ProgressBar from 'react-native-progress/Bar';
 import { sampleProductDetail } from '../data/DummyData';
 import { Rating } from 'react-native-elements';
-import { NavigationActions  } from 'react-navigation';
+import { NavigationActions } from 'react-navigation';
 
 export class ProductLayoutComponent extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            isLoading: true,
+            isLoading: false,
             dataSource: sampleProductDetail[0].product_details,
-            dropDownValForFilter:this.props.dropDownValForFilter,
-            navigation: this.props.nav1
+            dropDownValForFilter: this.props.dropDownValForFilter,
+            navigation: this.props.nav1,
+            colorCodeData: [
+                { key: 'One' },
+                { key: 'Two' },
+                { key: 'Three' },
+                { key: 'Four' },
+                { key: 'Five' },
+                { key: 'Six' },
+                { key: 'Seven' },
+                { key: 'Eight' },
+                { key: 'Nine' },
+                { key: 'Ten' },
+                { key: 'Eleven' },
+                { key: 'Twelve' }
+            ]
         }
-        YellowBox.ignoreWarnings([
-            'Warning: componentWillMount is deprecated',
-            'Warning: componentWillReceiveProps is deprecated',
-        ]);
+        // YellowBox.ignoreWarnings([
+        //     'Warning: componentWillMount is deprecated',
+        //     'Warning: componentWillReceiveProps is deprecated',
+        // ]);
     }
 
     getItem(pdt_name) {
         const navigateAction = NavigationActions.navigate({
             routeName: 'PDP',
             params: {
-                title:pdt_name
+                title: pdt_name
             },
-          });
+        });
         this.state.navigation.dispatch(navigateAction);
     }
 
@@ -39,69 +53,70 @@ export class ProductLayoutComponent extends React.Component {
                     height: 1,
                     width: "100%",
                     backgroundColor: "#000",
-                    marginVertical:20
+                    marginVertical: 20
                 }}
             />
         );
     }
-    
 
-    filterCall = ()=>{
-        //Alert.alert(this.state.dropDownValForFilter);
+    filterCall = () => {
         let localCopy = sampleProductDetail[0].product_details;
-        if(this.state.dropDownValForFilter == "" || this.state.dropDownValForFilter == "Show all"){
+        if (this.state.dropDownValForFilter == "" || this.state.dropDownValForFilter == "Show all") {
             this.setState({
-                dataSource:localCopy
+                dataSource: localCopy
             })
-            
+
         }
-        else if (this.state.dropDownValForFilter == "Today Free Pickup"){
-            let a = localCopy.filter((item)=>{
+        else if (this.state.dropDownValForFilter == "Today Free Pickup") {
+            let a = localCopy.filter((item) => {
                 return (item.bopos == true)
             })
             this.setState({
-                dataSource:a
+                dataSource: a
             })
-            
+
         }
-        else if (this.state.dropDownValForFilter == "Ship to Store"){
-            let b = localCopy.filter((item)=>{
+        else if (this.state.dropDownValForFilter == "Ship to Store") {
+            let b = localCopy.filter((item) => {
                 return (item.boss == true)
             })
             this.setState({
-                dataSource:b
+                dataSource: b
             })
         }
-        else if (this.state.dropDownValForFilter == "Ship to Home"){
-            let c= localCopy.filter((item)=>{
+        else if (this.state.dropDownValForFilter == "Ship to Home") {
+            let c = localCopy.filter((item) => {
                 return (item.ship == true)
             })
             this.setState({
-                dataSource:c
+                dataSource: c
             })
         }
-        
-        
+
+
     }
 
+    static getDerivedStateFromProps(props, state) {
+        if (props.dropDownValForFilter !== state.dropDownValForFilter) {
+            return {
+                dropDownValForFilter: props.dropDownValForFilter,
+            };
+        }
+        return null;
+
+    }
+
+    colorChange = (colorIndex) => {
+        console.log(colorIndex);
+    }
     componentDidMount() {
-        this.setState({
-            isLoading: false,
-        }, function () {
-            // In this block you can do something with new state.
-        });
+
     }
 
     componentDidUpdate(prevProps, prevState) {
-        if(prevState.dropDownValForFilter !== this.state.dropDownValForFilter){
+        if (prevState.dropDownValForFilter !== this.state.dropDownValForFilter) {
             this.filterCall();
         }
-          
-    }
-    static getDerivedStateFromProps(nextProps, prevState){
-        return {
-            dropDownValForFilter:nextProps.dropDownValForFilter,
-        };
     }
 
     render() {
@@ -118,8 +133,8 @@ export class ProductLayoutComponent extends React.Component {
                     data={this.state.dataSource}
                     ItemSeparatorComponent={this.FlatListItemSeparator}
                     numColumns={2}
-                    renderItem={({ item,index }) =>
-                        <View style={[styles.wrapper,index % 2 == 0 && {borderRightWidth: 1, borderRightColor: '#000'}]}>
+                    renderItem={({ item, index }) =>
+                        <View style={[styles.wrapper, index % 2 == 0 && { borderRightWidth: 1, borderRightColor: '#000' }]}>
                             <View style={{ flex: 1, flexDirection: 'column', alignItems: 'center' }}>
                                 <Imageprogressive
                                     source={{ uri: item.pdt_image }}
@@ -132,13 +147,37 @@ export class ProductLayoutComponent extends React.Component {
                                     }}
                                     style={styles.imageView}
                                 />
+                                <View style={{ flex: 1 }}>
+                                    <FlatList
+                                        data={item.color_tile}
+                                        horizontal={true}
+                                        keyExtractor={(item, index) => index.toString()}
+                                        renderItem={({ item, index }) =>
+                                            <View>
+                                                <TouchableOpacity onPress={this.colorChange.bind(this,index)}>
+                                                    <Imageprogressive
+                                                        source={{ uri: item.color_preview }}
+                                                        indicator={ProgressBar.Pie}
+                                                        indicatorProps={{
+                                                            size: 10,
+                                                            borderWidth: 0,
+                                                            color: 'rgba(150, 150, 150, 1)',
+                                                            unfilledColor: 'rgba(200, 200, 200, 0.2)'
+                                                        }}
+                                                        style={styles.imagePreView}
+                                                    />
+                                                </TouchableOpacity>
+                                            </View>
+                                        }
+                                    />
+                                </View>
                                 <Text style={styles.salePrice}>Sale {item.sale_price}</Text>
                                 <Text style={styles.originalPrice}>Reg {item.reg_price}</Text>
-                                <Text onPress={this.getItem.bind(this,item.pdt_name)}
+                                <Text onPress={this.getItem.bind(this, item.pdt_name)}
                                     style={styles.textView} >
                                     {item.pdt_name}
                                 </Text>
-                                <View style={{ flex: 1, flexDirection: 'row',marginVertical:6 }}>
+                                <View style={{ flex: 1, flexDirection: 'row', marginVertical: 6 }}>
                                     <Rating
                                         imageSize={20}
                                         readonly
@@ -146,13 +185,14 @@ export class ProductLayoutComponent extends React.Component {
                                     />
                                     <Text>({item.star_count})</Text>
                                 </View>
-                                <View>{item.bopos && <Text style={{fontWeight:'bold',fontSize:16,color:'#000'}}>Today Free Pick up </Text>}</View>
-                                <View>{item.boss && <Text style={{fontWeight:'bold',fontSize:16,color:'#000'}}>Ship to store Free</Text> }</View>
+                                <View>{item.bopos && <Text style={{ fontWeight: 'bold', fontSize: 16, color: '#000' }}>Today Free Pick up </Text>}</View>
+                                <View>{item.boss && <Text style={{ fontWeight: 'bold', fontSize: 16, color: '#000' }}>Ship to store Free</Text>}</View>
                             </View>
                         </View>
                     }
                     keyExtractor={(item, index) => index.toString()}
                 />
+
             </View>
         );
     }
@@ -164,6 +204,12 @@ const styles = StyleSheet.create({
         height: 155,
         margin: 7,
         borderRadius: 7,
+    },
+    imagePreView: {
+        width: 20,
+        height: 20,
+        marginRight: 3,
+        marginVertical: 4
     },
     textView: {
         width: '100%',
@@ -183,7 +229,7 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         color: '#000'
     },
-    wrapper:{
-        flex:1
+    wrapper: {
+        flex: 1
     }
 });

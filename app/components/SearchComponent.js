@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { View, Text, FlatList, ActivityIndicator, Alert, StyleSheet } from "react-native";
-import { List, ListItem, SearchBar  } from "react-native-elements";
+import { List, ListItem, SearchBar } from "react-native-elements";
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
-import {sampleSearchData} from '../data/DummyData'
+import { sampleSearchData } from '../data/DummyData'
 
 export class SearchComponent extends Component {
   constructor(props) {
@@ -10,7 +10,6 @@ export class SearchComponent extends Component {
     this.state = {
       loading: true,
       text: '',
-      focus: false,
     };
     this.data = [];
   }
@@ -26,7 +25,7 @@ export class SearchComponent extends Component {
     });
   }
 
-  SearchFilterFunction(text) {
+  searchFilterFunction(text) {
     if (text !== '') {
       const newData = this.data.filter(function (item) {
         const itemData = item.pdt_name.toUpperCase();
@@ -36,13 +35,13 @@ export class SearchComponent extends Component {
       this.setState({
         dataSource: newData,
         text: text,
-        activeSearch : true
+        activeSearch: true
       })
     }
     else {
       this.setState({
         text: '',
-        activeSearch : false
+        activeSearch: false
       })
     }
 
@@ -80,14 +79,14 @@ export class SearchComponent extends Component {
     else if (!this.state.loading && this.state.activeSearch) {
       return (
         <View style={styles.mainContainer}>
-         <SearchBar
-          placeholder="Search"
-          containerStyle={styles.searchcontainer}
-          inputStyle= {styles.searchbar} 
-          icon={{ type: 'material', color: '#000', name: 'search'}}
-          onChangeText={(text) => this.SearchFilterFunction(text)}
-          value={this.state.text} />
-          <Icon name="barcode-scan" size={30} color='#000'style={styles.scanIcon}/>
+          <SearchBar
+            placeholder="Search"
+            containerStyle={styles.searchcontainer}
+            inputStyle={styles.searchbar}
+            icon={{ type: 'material', color: '#000', name: 'search' }}
+            onChangeText={(text) => this.searchFilterFunction(text)}
+            value={this.state.text} />
+          <Icon name="barcode-scan" size={30} color='#000' style={styles.scanIcon} />
           <FlatList
             data={this.state.dataSource}
             ItemSeparatorComponent={this.flatListViewItemSeparator}
@@ -95,7 +94,7 @@ export class SearchComponent extends Component {
             onPress={this.getFlatListViewItem.bind(this, item.pdt_name)} >{item.pdt_name}</Text>}
             keyExtractor={(item, index) => index.toString()}
             style={{ marginTop: 10 }}
-            ListEmptyComponent={this.noResult.bind(this)}
+            ListEmptyComponent={this.noResult}
           />
         </View>
       );
@@ -106,12 +105,12 @@ export class SearchComponent extends Component {
           <SearchBar
             placeholder="Search"
             containerStyle={styles.searchcontainer}
-            inputStyle= {styles.searchbar} 
-            icon={{ type: 'material', color: '#000', name: 'search'}}
-            onChangeText={(text) => this.SearchFilterFunction(text)}
+            inputStyle={styles.searchbar}
+            icon={{ type: 'material', color: '#000', name: 'search' }}
+            onChangeText={(text) => this.searchFilterFunction(text)}
             placeholderTextColor='#000'
             value={this.state.text} />
-             <Icon name="barcode-scan" size={30} color='#000'style={styles.scanIcon}/>
+          <Icon name="barcode-scan" size={30} color='#000' style={styles.scanIcon} />
         </View>
       )
     }
@@ -121,34 +120,34 @@ export class SearchComponent extends Component {
 
 const styles = StyleSheet.create({
   mainContainer: {
-    
+
   },
   rowViewContainer: {
     fontSize: 16,
     padding: 10,
-    color:'#000',
+    color: '#000',
     fontWeight: 'bold',
-    
+
   },
-  searchcontainer:{
+  searchcontainer: {
     borderBottomColor: 'transparent',
     borderTopColor: 'transparent',
-    backgroundColor:'#fff',
+    backgroundColor: '#fff',
     width: "98%",
   },
-  searchbar:{
-    borderBottomColor:'#000',
+  searchbar: {
+    borderBottomColor: '#000',
     borderTopColor: '#000',
-    backgroundColor:'#fff',
+    backgroundColor: '#fff',
     borderWidth: 1,
     borderRadius: 5,
-    paddingVertical:5,
-    color:'#000',
+    paddingVertical: 5,
+    color: '#000',
     fontWeight: 'bold',
   },
-  scanIcon:{
+  scanIcon: {
     position: 'absolute',
-    right:     30,
-    top:      12,
+    right: 30,
+    top: 12,
   }
 });

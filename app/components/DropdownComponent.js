@@ -9,7 +9,8 @@ export class DropdownComponent extends Component {
         super(props);
         this.state = {
             dataSource: sampleProductDetail,
-            dropdowList:sampleDropdownOptions
+            dropdowList:sampleDropdownOptions,
+            dropdowListDefault : "Pickup & Shipping",
         }
     }
 
@@ -60,9 +61,7 @@ export class DropdownComponent extends Component {
         }
     }
     onClickDropDown=(selectedVal)=>{
-        //Alert.alert(selectedVal)
         this.props.onDropDownSelect(selectedVal);
-        //return selectedVal;
     }
     dropdownRenderSeparator(sectionID, rowID, adjacentRowHighlighted) {
         if (rowID == 4) return true;
@@ -72,14 +71,7 @@ export class DropdownComponent extends Component {
     }
 
     componentDidMount() {
-        this.dropdowList = sampleDropdownOptions;
-        this.dropdowListDefault = "Pickup & Shipping";
-        this.setState({
-            dropdowList: this.dropdowList,
-            dropdowListDefault: this.dropdowListDefault
-        }, function () {
-            // In this block you can do something with new state.
-        });
+        
     }
 
     render() {

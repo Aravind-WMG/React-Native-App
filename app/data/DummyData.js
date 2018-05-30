@@ -49,10 +49,19 @@ export const sampleProductDetail = [{
         "boss": false,
         "ship": false,
         "color_tile": [{
-            "black": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1",
-            "white": "https://media.kohlsimg.com/is/image/kohls/396327_White?wid=155&hei=155&op_sharpen=1"
+            "color_name": "black",
+            "color_preview": "https://media.kohlsimg.com/is/image/kohls/5178_Black_sw?wid=30&hei=30",
+            "color_img": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1"
+        },{
+            "color_name": "blue",
+            "color_preview": "https://media.kohlsimg.com/is/image/kohls/396327_Dark_Stonewash_sw?wid=30&hei=30",
+            "color_img": "https://media.kohlsimg.com/is/image/kohls/381312_Kale?wid=155&hei=155&op_sharpen=1"
+        },{
+            "color_name": "blue",
+            "color_preview": "https://media.kohlsimg.com/is/image/kohls/396327_Dark_Stonewash_sw?wid=30&hei=30",
+            "color_img": "https://media.kohlsimg.com/is/image/kohls/381312_Kale?wid=155&hei=155&op_sharpen=1"
         }],
-        "star_count": 100,
+        "star_count": 1030,
         "pdt_id": 1
     },
     {
@@ -65,8 +74,13 @@ export const sampleProductDetail = [{
         "boss": true,
         "ship": false,
         "color_tile": [{
-            "black": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1",
-            "white": "https://media.kohlsimg.com/is/image/kohls/396327_White?wid=155&hei=155&op_sharpen=1"
+            "color_name": "black",
+            "color_preview": "https://media.kohlsimg.com/is/image/kohls/5178_Black_sw?wid=30&hei=30",
+            "color_img": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1"
+        }, {
+            "color_name": "blue",
+            "color_preview": "https://media.kohlsimg.com/is/image/kohls/396327_Dark_Stonewash_sw?wid=30&hei=30",
+            "color_img": "https://media.kohlsimg.com/is/image/kohls/381312_Kale?wid=155&hei=155&op_sharpen=1"
         }],
         "star_count": 200,
         "pdt_id": 1
@@ -81,8 +95,13 @@ export const sampleProductDetail = [{
         "boss": true,
         "ship": false,
         "color_tile": [{
-            "black": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1",
-            "white": "https://media.kohlsimg.com/is/image/kohls/396327_White?wid=155&hei=155&op_sharpen=1"
+            "color_name": "black",
+            "color_preview": "https://media.kohlsimg.com/is/image/kohls/5178_Black_sw?wid=30&hei=30",
+            "color_img": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1"
+        }, {
+            "color_name": "blue",
+            "color_preview": "https://media.kohlsimg.com/is/image/kohls/396327_Dark_Stonewash_sw?wid=30&hei=30",
+            "color_img": "https://media.kohlsimg.com/is/image/kohls/381312_Kale?wid=155&hei=155&op_sharpen=1"
         }],
         "star_count": 10,
         "pdt_id": 1
@@ -97,8 +116,13 @@ export const sampleProductDetail = [{
         "boss": false,
         "ship": true,
         "color_tile": [{
-            "black": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1",
-            "white": "https://media.kohlsimg.com/is/image/kohls/396327_White?wid=155&hei=155&op_sharpen=1"
+            "color_name": "black",
+            "color_preview": "https://media.kohlsimg.com/is/image/kohls/5178_Black_sw?wid=30&hei=30",
+            "color_img": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1"
+        }, {
+            "color_name": "blue",
+            "color_preview": "https://media.kohlsimg.com/is/image/kohls/396327_Dark_Stonewash_sw?wid=30&hei=30",
+            "color_img": "https://media.kohlsimg.com/is/image/kohls/381312_Kale?wid=155&hei=155&op_sharpen=1"
         }],
         "star_count": 2030,
         "pdt_id": 1
@@ -113,8 +137,13 @@ export const sampleProductDetail = [{
         "boss": false,
         "ship": true,
         "color_tile": [{
-            "black": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1",
-            "white": "https://media.kohlsimg.com/is/image/kohls/396327_White?wid=155&hei=155&op_sharpen=1"
+            "color_name": "black",
+            "color_preview": "https://media.kohlsimg.com/is/image/kohls/5178_Black_sw?wid=30&hei=30",
+            "color_img": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1"
+        }, {
+            "color_name": "blue",
+            "color_preview": "https://media.kohlsimg.com/is/image/kohls/396327_Dark_Stonewash_sw?wid=30&hei=30",
+            "color_img": "https://media.kohlsimg.com/is/image/kohls/381312_Kale?wid=155&hei=155&op_sharpen=1"
         }],
         "star_count": 138,
         "pdt_id": 1
@@ -129,8 +158,13 @@ export const sampleProductDetail = [{
         "boss": true,
         "ship": false,
         "color_tile": [{
-            "black": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1",
-            "white": "https://media.kohlsimg.com/is/image/kohls/396327_White?wid=155&hei=155&op_sharpen=1"
+            "color_name": "black",
+            "color_preview": "https://media.kohlsimg.com/is/image/kohls/5178_Black_sw?wid=30&hei=30",
+            "color_img": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1"
+        }, {
+            "color_name": "blue",
+            "color_preview": "https://media.kohlsimg.com/is/image/kohls/396327_Dark_Stonewash_sw?wid=30&hei=30",
+            "color_img": "https://media.kohlsimg.com/is/image/kohls/381312_Kale?wid=155&hei=155&op_sharpen=1"
         }],
         "star_count": 100,
         "pdt_id": 1
@@ -145,8 +179,13 @@ export const sampleProductDetail = [{
         "boss": false,
         "ship": false,
         "color_tile": [{
-            "black": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1",
-            "white": "https://media.kohlsimg.com/is/image/kohls/396327_White?wid=155&hei=155&op_sharpen=1"
+            "color_name": "black",
+            "color_preview": "https://media.kohlsimg.com/is/image/kohls/5178_Black_sw?wid=30&hei=30",
+            "color_img": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1"
+        }, {
+            "color_name": "blue",
+            "color_preview": "https://media.kohlsimg.com/is/image/kohls/396327_Dark_Stonewash_sw?wid=30&hei=30",
+            "color_img": "https://media.kohlsimg.com/is/image/kohls/381312_Kale?wid=155&hei=155&op_sharpen=1"
         }],
         "star_count": 100,
         "pdt_id": 1
@@ -161,8 +200,13 @@ export const sampleProductDetail = [{
         "boss": true,
         "ship": false,
         "color_tile": [{
-            "black": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1",
-            "white": "https://media.kohlsimg.com/is/image/kohls/396327_White?wid=155&hei=155&op_sharpen=1"
+            "color_name": "black",
+            "color_preview": "https://media.kohlsimg.com/is/image/kohls/5178_Black_sw?wid=30&hei=30",
+            "color_img": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1"
+        }, {
+            "color_name": "blue",
+            "color_preview": "https://media.kohlsimg.com/is/image/kohls/396327_Dark_Stonewash_sw?wid=30&hei=30",
+            "color_img": "https://media.kohlsimg.com/is/image/kohls/381312_Kale?wid=155&hei=155&op_sharpen=1"
         }],
         "star_count": 100,
         "pdt_id": 1
@@ -177,8 +221,13 @@ export const sampleProductDetail = [{
         "boss": false,
         "ship": true,
         "color_tile": [{
-            "black": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1",
-            "white": "https://media.kohlsimg.com/is/image/kohls/396327_White?wid=155&hei=155&op_sharpen=1"
+            "color_name": "black",
+            "color_preview": "https://media.kohlsimg.com/is/image/kohls/5178_Black_sw?wid=30&hei=30",
+            "color_img": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1"
+        }, {
+            "color_name": "blue",
+            "color_preview": "https://media.kohlsimg.com/is/image/kohls/396327_Dark_Stonewash_sw?wid=30&hei=30",
+            "color_img": "https://media.kohlsimg.com/is/image/kohls/381312_Kale?wid=155&hei=155&op_sharpen=1"
         }],
         "star_count": 100,
         "pdt_id": 1
@@ -193,8 +242,13 @@ export const sampleProductDetail = [{
         "boss": true,
         "ship": false,
         "color_tile": [{
-            "black": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1",
-            "white": "https://media.kohlsimg.com/is/image/kohls/396327_White?wid=155&hei=155&op_sharpen=1"
+            "color_name": "black",
+            "color_preview": "https://media.kohlsimg.com/is/image/kohls/5178_Black_sw?wid=30&hei=30",
+            "color_img": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1"
+        }, {
+            "color_name": "blue",
+            "color_preview": "https://media.kohlsimg.com/is/image/kohls/396327_Dark_Stonewash_sw?wid=30&hei=30",
+            "color_img": "https://media.kohlsimg.com/is/image/kohls/381312_Kale?wid=155&hei=155&op_sharpen=1"
         }],
         "star_count": 100,
         "pdt_id": 1
@@ -209,8 +263,13 @@ export const sampleProductDetail = [{
         "boss": false,
         "ship": true,
         "color_tile": [{
-            "black": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1",
-            "white": "https://media.kohlsimg.com/is/image/kohls/396327_White?wid=155&hei=155&op_sharpen=1"
+            "color_name": "black",
+            "color_preview": "https://media.kohlsimg.com/is/image/kohls/5178_Black_sw?wid=30&hei=30",
+            "color_img": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1"
+        }, {
+            "color_name": "blue",
+            "color_preview": "https://media.kohlsimg.com/is/image/kohls/396327_Dark_Stonewash_sw?wid=30&hei=30",
+            "color_img": "https://media.kohlsimg.com/is/image/kohls/381312_Kale?wid=155&hei=155&op_sharpen=1"
         }],
         "star_count": 100,
         "pdt_id": 1
@@ -225,8 +284,13 @@ export const sampleProductDetail = [{
         "boss": true,
         "ship": false,
         "color_tile": [{
-            "black": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1",
-            "white": "https://media.kohlsimg.com/is/image/kohls/396327_White?wid=155&hei=155&op_sharpen=1"
+            "color_name": "black",
+            "color_preview": "https://media.kohlsimg.com/is/image/kohls/5178_Black_sw?wid=30&hei=30",
+            "color_img": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1"
+        }, {
+            "color_name": "blue",
+            "color_preview": "https://media.kohlsimg.com/is/image/kohls/396327_Dark_Stonewash_sw?wid=30&hei=30",
+            "color_img": "https://media.kohlsimg.com/is/image/kohls/381312_Kale?wid=155&hei=155&op_sharpen=1"
         }],
         "star_count": 100,
         "pdt_id": 1
@@ -241,8 +305,13 @@ export const sampleProductDetail = [{
         "boss": false,
         "ship": false,
         "color_tile": [{
-            "black": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1",
-            "white": "https://media.kohlsimg.com/is/image/kohls/396327_White?wid=155&hei=155&op_sharpen=1"
+            "color_name": "black",
+            "color_preview": "https://media.kohlsimg.com/is/image/kohls/5178_Black_sw?wid=30&hei=30",
+            "color_img": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1"
+        }, {
+            "color_name": "blue",
+            "color_preview": "https://media.kohlsimg.com/is/image/kohls/396327_Dark_Stonewash_sw?wid=30&hei=30",
+            "color_img": "https://media.kohlsimg.com/is/image/kohls/381312_Kale?wid=155&hei=155&op_sharpen=1"
         }],
         "star_count": 100,
         "pdt_id": 1
@@ -257,8 +326,13 @@ export const sampleProductDetail = [{
         "boss": false,
         "ship": true,
         "color_tile": [{
-            "black": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1",
-            "white": "https://media.kohlsimg.com/is/image/kohls/396327_White?wid=155&hei=155&op_sharpen=1"
+            "color_name": "black",
+            "color_preview": "https://media.kohlsimg.com/is/image/kohls/5178_Black_sw?wid=30&hei=30",
+            "color_img": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1"
+        }, {
+            "color_name": "blue",
+            "color_preview": "https://media.kohlsimg.com/is/image/kohls/396327_Dark_Stonewash_sw?wid=30&hei=30",
+            "color_img": "https://media.kohlsimg.com/is/image/kohls/381312_Kale?wid=155&hei=155&op_sharpen=1"
         }],
         "star_count": 100,
         "pdt_id": 1
@@ -273,8 +347,13 @@ export const sampleProductDetail = [{
         "boss": false,
         "ship": false,
         "color_tile": [{
-            "black": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1",
-            "white": "https://media.kohlsimg.com/is/image/kohls/396327_White?wid=155&hei=155&op_sharpen=1"
+            "color_name": "black",
+            "color_preview": "https://media.kohlsimg.com/is/image/kohls/5178_Black_sw?wid=30&hei=30",
+            "color_img": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1"
+        }, {
+            "color_name": "blue",
+            "color_preview": "https://media.kohlsimg.com/is/image/kohls/396327_Dark_Stonewash_sw?wid=30&hei=30",
+            "color_img": "https://media.kohlsimg.com/is/image/kohls/381312_Kale?wid=155&hei=155&op_sharpen=1"
         }],
         "star_count": 100,
         "pdt_id": 1
@@ -289,8 +368,13 @@ export const sampleProductDetail = [{
         "boss": false,
         "ship": false,
         "color_tile": [{
-            "black": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1",
-            "white": "https://media.kohlsimg.com/is/image/kohls/396327_White?wid=155&hei=155&op_sharpen=1"
+            "color_name": "black",
+            "color_preview": "https://media.kohlsimg.com/is/image/kohls/5178_Black_sw?wid=30&hei=30",
+            "color_img": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1"
+        }, {
+            "color_name": "blue",
+            "color_preview": "https://media.kohlsimg.com/is/image/kohls/396327_Dark_Stonewash_sw?wid=30&hei=30",
+            "color_img": "https://media.kohlsimg.com/is/image/kohls/381312_Kale?wid=155&hei=155&op_sharpen=1"
         }],
         "star_count": 100,
         "pdt_id": 1
@@ -305,8 +389,13 @@ export const sampleProductDetail = [{
         "boss": true,
         "ship": false,
         "color_tile": [{
-            "black": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1",
-            "white": "https://media.kohlsimg.com/is/image/kohls/396327_White?wid=155&hei=155&op_sharpen=1"
+            "color_name": "black",
+            "color_preview": "https://media.kohlsimg.com/is/image/kohls/5178_Black_sw?wid=30&hei=30",
+            "color_img": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1"
+        }, {
+            "color_name": "blue",
+            "color_preview": "https://media.kohlsimg.com/is/image/kohls/396327_Dark_Stonewash_sw?wid=30&hei=30",
+            "color_img": "https://media.kohlsimg.com/is/image/kohls/381312_Kale?wid=155&hei=155&op_sharpen=1"
         }],
         "star_count": 100,
         "pdt_id": 1
@@ -321,8 +410,13 @@ export const sampleProductDetail = [{
         "boss": true,
         "ship": false,
         "color_tile": [{
-            "black": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1",
-            "white": "https://media.kohlsimg.com/is/image/kohls/396327_White?wid=155&hei=155&op_sharpen=1"
+            "color_name": "black",
+            "color_preview": "https://media.kohlsimg.com/is/image/kohls/5178_Black_sw?wid=30&hei=30",
+            "color_img": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1"
+        }, {
+            "color_name": "blue",
+            "color_preview": "https://media.kohlsimg.com/is/image/kohls/396327_Dark_Stonewash_sw?wid=30&hei=30",
+            "color_img": "https://media.kohlsimg.com/is/image/kohls/381312_Kale?wid=155&hei=155&op_sharpen=1"
         }],
         "star_count": 100,
         "pdt_id": 1
@@ -337,8 +431,13 @@ export const sampleProductDetail = [{
         "boss": false,
         "ship": false,
         "color_tile": [{
-            "black": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1",
-            "white": "https://media.kohlsimg.com/is/image/kohls/396327_White?wid=155&hei=155&op_sharpen=1"
+            "color_name": "black",
+            "color_preview": "https://media.kohlsimg.com/is/image/kohls/5178_Black_sw?wid=30&hei=30",
+            "color_img": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1"
+        }, {
+            "color_name": "blue",
+            "color_preview": "https://media.kohlsimg.com/is/image/kohls/396327_Dark_Stonewash_sw?wid=30&hei=30",
+            "color_img": "https://media.kohlsimg.com/is/image/kohls/381312_Kale?wid=155&hei=155&op_sharpen=1"
         }],
         "star_count": 100,
         "pdt_id": 1
@@ -353,8 +452,13 @@ export const sampleProductDetail = [{
         "boss": false,
         "ship": false,
         "color_tile": [{
-            "black": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1",
-            "white": "https://media.kohlsimg.com/is/image/kohls/396327_White?wid=155&hei=155&op_sharpen=1"
+            "color_name": "black",
+            "color_preview": "https://media.kohlsimg.com/is/image/kohls/5178_Black_sw?wid=30&hei=30",
+            "color_img": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1"
+        }, {
+            "color_name": "blue",
+            "color_preview": "https://media.kohlsimg.com/is/image/kohls/396327_Dark_Stonewash_sw?wid=30&hei=30",
+            "color_img": "https://media.kohlsimg.com/is/image/kohls/381312_Kale?wid=155&hei=155&op_sharpen=1"
         }],
         "star_count": 100,
         "pdt_id": 1
@@ -369,8 +473,13 @@ export const sampleProductDetail = [{
         "boss": true,
         "ship": false,
         "color_tile": [{
-            "black": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1",
-            "white": "https://media.kohlsimg.com/is/image/kohls/396327_White?wid=155&hei=155&op_sharpen=1"
+            "color_name": "black",
+            "color_preview": "https://media.kohlsimg.com/is/image/kohls/5178_Black_sw?wid=30&hei=30",
+            "color_img": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1"
+        }, {
+            "color_name": "blue",
+            "color_preview": "https://media.kohlsimg.com/is/image/kohls/396327_Dark_Stonewash_sw?wid=30&hei=30",
+            "color_img": "https://media.kohlsimg.com/is/image/kohls/381312_Kale?wid=155&hei=155&op_sharpen=1"
         }],
         "star_count": 100,
         "pdt_id": 1
@@ -385,8 +494,13 @@ export const sampleProductDetail = [{
         "boss": false,
         "ship": false,
         "color_tile": [{
-            "black": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1",
-            "white": "https://media.kohlsimg.com/is/image/kohls/396327_White?wid=155&hei=155&op_sharpen=1"
+            "color_name": "black",
+            "color_preview": "https://media.kohlsimg.com/is/image/kohls/5178_Black_sw?wid=30&hei=30",
+            "color_img": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1"
+        }, {
+            "color_name": "blue",
+            "color_preview": "https://media.kohlsimg.com/is/image/kohls/396327_Dark_Stonewash_sw?wid=30&hei=30",
+            "color_img": "https://media.kohlsimg.com/is/image/kohls/381312_Kale?wid=155&hei=155&op_sharpen=1"
         }],
         "star_count": 100,
         "pdt_id": 1
@@ -401,8 +515,13 @@ export const sampleProductDetail = [{
         "boss": true,
         "ship": false,
         "color_tile": [{
-            "black": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1",
-            "white": "https://media.kohlsimg.com/is/image/kohls/396327_White?wid=155&hei=155&op_sharpen=1"
+            "color_name": "black",
+            "color_preview": "https://media.kohlsimg.com/is/image/kohls/5178_Black_sw?wid=30&hei=30",
+            "color_img": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1"
+        }, {
+            "color_name": "blue",
+            "color_preview": "https://media.kohlsimg.com/is/image/kohls/396327_Dark_Stonewash_sw?wid=30&hei=30",
+            "color_img": "https://media.kohlsimg.com/is/image/kohls/381312_Kale?wid=155&hei=155&op_sharpen=1"
         }],
         "star_count": 100,
         "pdt_id": 1
@@ -417,8 +536,13 @@ export const sampleProductDetail = [{
         "boss": false,
         "ship": false,
         "color_tile": [{
-            "black": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1",
-            "white": "https://media.kohlsimg.com/is/image/kohls/396327_White?wid=155&hei=155&op_sharpen=1"
+            "color_name": "black",
+            "color_preview": "https://media.kohlsimg.com/is/image/kohls/5178_Black_sw?wid=30&hei=30",
+            "color_img": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1"
+        }, {
+            "color_name": "blue",
+            "color_preview": "https://media.kohlsimg.com/is/image/kohls/396327_Dark_Stonewash_sw?wid=30&hei=30",
+            "color_img": "https://media.kohlsimg.com/is/image/kohls/381312_Kale?wid=155&hei=155&op_sharpen=1"
         }],
         "star_count": 100,
         "pdt_id": 1
@@ -433,8 +557,13 @@ export const sampleProductDetail = [{
         "boss": false,
         "ship": false,
         "color_tile": [{
-            "black": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1",
-            "white": "https://media.kohlsimg.com/is/image/kohls/396327_White?wid=155&hei=155&op_sharpen=1"
+            "color_name": "black",
+            "color_preview": "https://media.kohlsimg.com/is/image/kohls/5178_Black_sw?wid=30&hei=30",
+            "color_img": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1"
+        }, {
+            "color_name": "blue",
+            "color_preview": "https://media.kohlsimg.com/is/image/kohls/396327_Dark_Stonewash_sw?wid=30&hei=30",
+            "color_img": "https://media.kohlsimg.com/is/image/kohls/381312_Kale?wid=155&hei=155&op_sharpen=1"
         }],
         "star_count": 100,
         "pdt_id": 1
@@ -449,8 +578,13 @@ export const sampleProductDetail = [{
         "boss": false,
         "ship": false,
         "color_tile": [{
-            "black": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1",
-            "white": "https://media.kohlsimg.com/is/image/kohls/396327_White?wid=155&hei=155&op_sharpen=1"
+            "color_name": "black",
+            "color_preview": "https://media.kohlsimg.com/is/image/kohls/5178_Black_sw?wid=30&hei=30",
+            "color_img": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1"
+        }, {
+            "color_name": "blue",
+            "color_preview": "https://media.kohlsimg.com/is/image/kohls/396327_Dark_Stonewash_sw?wid=30&hei=30",
+            "color_img": "https://media.kohlsimg.com/is/image/kohls/381312_Kale?wid=155&hei=155&op_sharpen=1"
         }],
         "star_count": 100,
         "pdt_id": 1
@@ -465,8 +599,13 @@ export const sampleProductDetail = [{
         "boss": false,
         "ship": true,
         "color_tile": [{
-            "black": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1",
-            "white": "https://media.kohlsimg.com/is/image/kohls/396327_White?wid=155&hei=155&op_sharpen=1"
+            "color_name": "black",
+            "color_preview": "https://media.kohlsimg.com/is/image/kohls/5178_Black_sw?wid=30&hei=30",
+            "color_img": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1"
+        },{
+            "color_name": "blue",
+            "color_preview": "https://media.kohlsimg.com/is/image/kohls/396327_Dark_Stonewash_sw?wid=30&hei=30",
+            "color_img": "https://media.kohlsimg.com/is/image/kohls/381312_Kale?wid=155&hei=155&op_sharpen=1"
         }],
         "star_count": 100,
         "pdt_id": 1
@@ -481,8 +620,13 @@ export const sampleProductDetail = [{
         "boss": false,
         "ship": false,
         "color_tile": [{
-            "black": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1",
-            "white": "https://media.kohlsimg.com/is/image/kohls/396327_White?wid=155&hei=155&op_sharpen=1"
+            "color_name": "black",
+            "color_preview": "https://media.kohlsimg.com/is/image/kohls/5178_Black_sw?wid=30&hei=30",
+            "color_img": "https://media.kohlsimg.com/is/image/kohls/396327_Black?wid=155&hei=155&op_sharpen=1"
+        }, {
+            "color_name": "blue",
+            "color_preview": "https://media.kohlsimg.com/is/image/kohls/396327_Dark_Stonewash_sw?wid=30&hei=30",
+            "color_img": "https://media.kohlsimg.com/is/image/kohls/381312_Kale?wid=155&hei=155&op_sharpen=1"
         }],
         "star_count": 100,
         "pdt_id": 1
@@ -546,6 +690,6 @@ export const sampleYouMayLikeThisDetail = [{
     }]
 }]
 
-export const sampleSizeOptions = ["13", "14", "15", "16","17","18"];
+export const sampleSizeOptions = ["13", "14", "15", "16", "17", "18"];
 
-export const sampleColorOptions = ["Black", "Red", "White", "Blue","Violet","Indigo","Green","Yellow","Orange"];
+export const sampleColorOptions = ["Black", "Red", "White", "Blue", "Violet", "Indigo", "Green", "Yellow", "Orange"];
