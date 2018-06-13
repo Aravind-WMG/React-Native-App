@@ -3,9 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
+    "babel-jest": "^23.0.1",
     "babel-preset-react-native-stage-0": "^1.0.1",
+    "chai": "^4.1.2",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
     "jest": "^22.4.3",
     "jest-react-native": "^18.0.0",
+    "mocha": "^5.2.0",
+    "react-dom": "^16.4.0",
+    "react-native-mock": "^0.3.1",
     "react-test-renderer": "16.3.1"
   },
   "scripts": {
@@ -15,7 +22,15 @@
     "test": "jest"
   },
   "jest": {
-    "preset": "react-native"
+    "preset": "react-native",
+    "collectCoverage": true,
+    "transformIgnorePatterns": [
+      "node_modules/(?!(react-native|react-native-elements|react-native-vector-icons|react-navigation|react-native-snap-carousel|react-native-image-progress|react-native-progress|react-native-modal-dropdown|react-native-safe-area-view)/)"
+    ],
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|less)$": "identity-obj-proxy"
+    }
   },
   "dependencies": {
     "react": "16.3.1",
@@ -23,6 +38,7 @@
     "react-native-elements": "^0.19.1",
     "react-native-image-progress": "^1.1.0",
     "react-native-modal-dropdown": "^0.6.2",
+    "react-native-modalbox": "^1.5.0",
     "react-native-progress": "^3.4.0",
     "react-native-snap-carousel": "^3.7.0",
     "react-native-vector-icons": "^4.6.0",

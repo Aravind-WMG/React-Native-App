@@ -25,6 +25,7 @@ const styles = StyleSheet.create({
     container: {
       width:'100%',
       backgroundColor: '#fff',
+      flex:1,
       marginTop: (Platform.OS === 'ios') ? 20 : 0,
     },
   });

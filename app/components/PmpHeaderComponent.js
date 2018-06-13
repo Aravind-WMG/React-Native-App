@@ -1,11 +1,22 @@
 import React from 'react';
-import { Text, View, StyleSheet, Image, TouchableOpacity } from 'react-native';
+import { Text, View, StyleSheet, Image, TouchableOpacity,Alert,Dimensions } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
+import resolveAssetSource from 'resolveAssetSource';
 
 export class PmpHeaderComponent extends React.Component {
     constructor(props) {
         super(props);
+        let icon =  require('../images/logo_new.png'); 
+        let source2 = resolveAssetSource(icon);
+        let source1 = Dimensions.get('window');
+        source2.width = source1.width > 200 ? 150: 100;
+        source2.height = source2.height > 50 ? 27 : 27;
+        this.state={
+            imgWidth:source2.width,
+            imgHeight:source2.height
+        }
     }
+   
     render() {
         return (
             <View style={styles.navBar}>
@@ -15,7 +26,8 @@ export class PmpHeaderComponent extends React.Component {
                     </TouchableOpacity>
                     <Image
                         source={require('../images/logo_new.png')}
-                        style={styles.imageStyle}
+                        style={[styles.imageStyle,{width:this.state.imgWidth,height:this.state.imgHeight}]}
+                        resizeMode="contain"
                     />
                 </View>
                 <View style={styles.navBarRight}>
@@ -42,19 +54,22 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'flex-start',
-        paddingLeft: 5
+        paddingLeft: 5,
+        flex:1,
+        width:'50%'
     },
     navBarRight: {
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'flex-end',
-        paddingRight: 10
+        paddingRight: 10,
+        flex:1,
+        width:'50%'
     },
     imageStyle: {
-        width: 180,
-        height: 27,
         backgroundColor: '#fff',
         marginHorizontal: 20,
+        alignSelf: 'stretch',
     },
     userName: {
         color: '#000',

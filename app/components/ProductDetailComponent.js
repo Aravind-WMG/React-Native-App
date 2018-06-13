@@ -10,7 +10,10 @@ import {
   Picker,
   Alert,
   Platform,
-  measure
+  measure,
+  Modal,
+  FlatList,
+  TouchableHighlight
 } from "react-native";
 import { PdpHeaderComponent } from "./PdpHeaderComponent";
 import { PdpCarouselComponent } from "./PdpCarouselComponent";
@@ -39,8 +42,45 @@ export class ProductDetailComponent extends React.Component {
       viewport: {
         width: Dimensions.get("window").width,
         height: Dimensions.get("window").height
-      }
+      },
+      modalVisible: false,
+      colorClicked: true,
+      sizeClicked: true,
     };
+  }
+  colorClicked(visible) {
+    this.setState({
+      colorClicked: true,
+      sizeClicked: false,
+      modalVisible: visible
+    });
+  }
+  sizeClicked(visible) {
+    this.setState({
+      sizeClicked: true,
+      colorClicked: false,
+      modalVisible: visible
+    });
+  }
+  dropDownSelect() {
+    this.setState({
+      colorClicked: false,
+      colorClicked: false,
+      modalVisible: false
+    });
+  }
+  setModalVisible(visible) {
+    if (this.state.colorClicked) {
+      this.setState({
+        colorDropdowListDefault: visible,
+        modalVisible: false
+      }); 
+    } else {
+      this.setState({
+        sizeDropdowListDefault: visible,
+        modalVisible: false
+      });
+    }
   }
   decrementQty = () => {
     if (this.state.qty !== 1) {
@@ -54,34 +94,14 @@ export class ProductDetailComponent extends React.Component {
       qty: this.state.qty + 1
     });
   };
-  onClickDropDown = selectedVal => {
-    this.setState({
-      sizeDropdowListDefault: ""
-    });
-    Alert.alert(selectedVal);
-  };
-  sizeDropdownRenderRow(rowData, rowID, highlighted) {
-    return (
-      <View style={styles.dropdownStyle}>
-        <Text style={styles.dropdownTextStyle}> {rowData} </Text>
-      </View>
-    );
-  }
-  colorDropdownRenderRow(rowData, rowID, highlighted) {
-    return (
-      <View style={styles.dropdownStyle}>
-        <Text style={styles.dropdownTextStyle}> {rowData} </Text>
-      </View>
-    );
-  }
   onScroll = event => {
     let currentOffset = event.nativeEvent.contentOffset.y;
     let viewPortHeight = this.state.viewport.height;
     this.refs.Marker.measure((x, y, width, height, pageX, pageY) => {
       if (pageY + 150 < currentOffset + viewPortHeight) {
         this.setState({
-            showAddToCart:true
-        })
+          showAddToCart: true
+        });
       }
     });
     //console.log(this.state.viewport.height+"Height");
@@ -90,13 +110,6 @@ export class ProductDetailComponent extends React.Component {
     let key = rowID;
     return <View style={styles.dropdownSeparator} key={key} />;
   }
-  //   layoutMeasure=()=>{
-  //     this.refs.Marker.measure(
-  //         (x, y, width, height, pageX, pageY) => {
-  //           //console.log(pageY+"YY");
-  //         }
-  //       );
-  //   }
   addToCart = () => {
     if (this.state.sizeDropdowListDefault != "") {
       Alert.alert("Please Select Size");
@@ -154,11 +167,7 @@ export class ProductDetailComponent extends React.Component {
                 Offer Stack
               </Text>
             </View>
-            <View
-              style={styles.dropdownWrap}
-              ref="Marker"
-              //   onLayout={this.layoutMeasure}
-            >
+            <View style={styles.dropdownWrap} ref="Marker">
               <Text
                 style={{
                   fontSize: 18,
@@ -169,18 +178,23 @@ export class ProductDetailComponent extends React.Component {
               >
                 Size
               </Text>
-              <ModalDropdown
-                options={this.state.sizeDropdowList}
-                defaultValue={this.state.sizeDropdowListDefault}
-                textStyle={styles.dropdownTextStyle}
-                dropdownStyle={styles.dropdownStyle}
-                renderRow={this.sizeDropdownRenderRow.bind(this)}
-                renderSeparator={this.dropdownRenderSeparator.bind(this)}
-                dropdownTextStyle={styles.dropdownTextStyle}
-                onSelect={(index, value) => {
-                  this.onClickDropDown(value);
+              <TouchableHighlight
+                onPress={() => {
+                  this.sizeClicked(!this.state.modalVisible);
                 }}
-              />
+               
+              >
+                <Text
+                  style={{
+                    fontSize: 18,
+                    marginLeft: 10,
+                    fontWeight: "bold",
+                    color: "#000"
+                  }}
+                >
+                  {this.state.sizeDropdowListDefault}
+                </Text>
+              </TouchableHighlight>
             </View>
             <View style={styles.dropdownWrap}>
               <Text
@@ -193,18 +207,99 @@ export class ProductDetailComponent extends React.Component {
               >
                 Color
               </Text>
-              <ModalDropdown
-                options={this.state.colorDropdowList}
-                defaultValue={this.state.colorDropdowListDefault}
-                textStyle={styles.dropdownTextStyle}
-                dropdownStyle={styles.dropdownStyle}
-                renderRow={this.colorDropdownRenderRow.bind(this)}
-                renderSeparator={this.dropdownRenderSeparator.bind(this)}
-                dropdownTextStyle={styles.dropdownTextStyle}
-                onSelect={(index, value) => {
-                  this.onClickDropDown(value);
+              <TouchableHighlight
+                onPress={() => {
+                  this.colorClicked(!this.state.modalVisible);
                 }}
-              />
+              >
+                <Text
+                  style={{
+                    fontSize: 18,
+                    marginLeft: 10,
+                    fontWeight: "bold",
+                    color: "#000"
+                  }}
+                >
+                  {this.state.colorDropdowListDefault}
+                </Text>
+              </TouchableHighlight>
+            </View>
+            <View style={{ flex: 1 }}>
+              <Modal
+                animationType="slide"
+                transparent={true}
+                supportedOrientations={['portrait','landscape']}
+                visible={this.state.modalVisible}
+                style={{height: 300}}
+                onRequestClose={() => {
+                  alert("Modal has been closed.");
+                }}
+              >
+                <View
+                  style={{
+                    backgroundColor: "rgba(255, 255, 255, 1)",
+                    marginTop: 450
+                  }}
+                >
+                  <TouchableHighlight
+                    onPress={() => {
+                      this.dropDownSelect();
+                    }}
+                  >
+                    <Text
+                      style={{
+                        fontSize: 18,
+                        marginLeft: 10,
+                        fontWeight: "bold",
+                        color: "#000",
+                        textAlign: "right"
+                      }}
+                    >
+                      DONE
+                    </Text>
+                  </TouchableHighlight>
+                  {this.state.sizeClicked && (
+                    <FlatList
+                      data={this.state.sizeDropdowList}
+                      keyExtractor={(item, index) => index.toString()}
+                      ItemSeparatorComponent={this.dropdownRenderSeparator.bind(
+                        this
+                      )}
+                      renderItem={({ item }) => (
+                        <View style={styles.dropdownStyle}>
+                          <TouchableOpacity
+                            onPress={() => {
+                              this.setModalVisible(item);
+                            }}
+                          >
+                            <Text style={styles.dropdownTextStyle}>{item}</Text>
+                          </TouchableOpacity>
+                        </View>
+                      )}
+                    />
+                  )}
+                  {this.state.colorClicked && (
+                    <FlatList
+                      data={this.state.colorDropdowList}
+                      keyExtractor={(item, index) => index.toString()}
+                      ItemSeparatorComponent={this.dropdownRenderSeparator.bind(
+                        this
+                      )}
+                      renderItem={({ item }) => (
+                        <View style={styles.dropdownStyle}>
+                          <TouchableOpacity
+                            onPress={() => {
+                              this.setModalVisible(item);
+                            }}
+                          >
+                            <Text style={styles.dropdownTextStyle}>{item}</Text>
+                          </TouchableOpacity>
+                        </View>
+                      )}
+                    />
+                  )}
+                </View>
+              </Modal>
             </View>
             <View style={styles.qtyWrap}>
               <Text style={styles.qtyStyle}>Quantity</Text>
@@ -344,7 +439,7 @@ const styles = StyleSheet.create({
     flex: 1,
     width: "100%",
     backgroundColor: "#fff",
-    marginTop: (Platform.OS === 'ios') ? 20 : 0,
+    marginTop: Platform.OS === "ios" ? 20 : 0
   },
   buttonValid: {
     opacity: 1,
@@ -481,17 +576,19 @@ const styles = StyleSheet.create({
     paddingVertical: 13,
     borderBottomWidth: 1,
     borderColor: "#000",
-    paddingRight: 10
+    paddingRight: 10,
+    width: "100%"
   },
   dropdownTextStyle: {
     fontSize: 18,
     fontWeight: "bold",
     color: "#000",
-    textAlign: "center"
+    textAlign: "center",
+    paddingVertical: 3
   },
   dropdownStyle: {
-    width: 100,
-    paddingVertical: 3
+    width: "100%",
+    flex: 1
   },
   fixedWrap: {
     flex: 1,

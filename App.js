@@ -1,9 +1,9 @@
 import React from 'react';
-import { StyleSheet, Text, View, ScrollView, Animated, Easing } from 'react-native';
+import { StyleSheet, Text, View, ScrollView, Animated, Easing, YellowBox } from 'react-native';
 import { ProductMatricsComponent } from './app/components/ProductMatricsComponent';
 import { ProductDetailComponent } from './app/components/ProductDetailComponent';
 import { createStackNavigator } from 'react-navigation';
-import { YellowBox } from 'react-native';
+
 
 
 YellowBox.ignoreWarnings(['Warning: isMounted(...) is deprecated', 'Module RCTImageLoader']);
