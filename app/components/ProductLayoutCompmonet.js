@@ -125,24 +125,24 @@ export class ProductLayoutComponent extends React.Component {
     //   .catch(error => {
     //     console.error(error);
     //   });
-    return fetch(
-      "https://r18-7-qa.lle-mcommerce.kohls.com/api/browse/v2/browse/product?skuCode=94343235",
-      {
-        headers: {
-          Accept: "application/json",
-          "x-correlation-id": "sdfd234",
-          "x-channel": "android"
-        },
-        method: "GET", 
-      }
-    )
-      .then(response => response.json())
-      .then(responseJson => {
-        console.log(responseJson);
-      })
-      .catch(error => {
-        console.error(error);
-      });
+    // return fetch(
+    //   "https://r18-7-qa.lle-mcommerce.kohls.com/api/browse/v2/browse/product?skuCode=94343235",
+    //   {
+    //     headers: {
+    //       Accept: "application/json",
+    //       "x-correlation-id": "sdfd234",
+    //       "x-channel": "android"
+    //     },
+    //     method: "GET",
+    //   }
+    // )
+    //   .then(response => response.json())
+    //   .then(responseJson => {
+    //     console.log(responseJson);
+    //   })
+    //   .catch(error => {
+    //     console.error(error);
+    //   });
   }
 
   componentDidUpdate(prevProps, prevState) {
@@ -195,7 +195,7 @@ export class ProductLayoutComponent extends React.Component {
                   }}
                   style={styles.imageView}
                 />
-                <View style={{ flex: 1 }}>
+                {/* <View style={{ flex: 1 }}>
                   <FlatList
                     data={item.color_tile}
                     horizontal={true}
@@ -220,7 +220,7 @@ export class ProductLayoutComponent extends React.Component {
                       </View>
                     )}
                   />
-                </View>
+                </View> */}
                 <Text style={styles.salePrice}>Sale {item.sale_price}</Text>
                 <Text style={styles.originalPrice}>Reg {item.reg_price}</Text>
                 <Text

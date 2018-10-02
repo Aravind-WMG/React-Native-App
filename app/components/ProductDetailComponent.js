@@ -45,7 +45,7 @@ export class ProductDetailComponent extends React.Component {
       },
       modalVisible: false,
       colorClicked: true,
-      sizeClicked: true,
+      sizeClicked: true
     };
   }
   colorClicked(visible) {
@@ -74,7 +74,7 @@ export class ProductDetailComponent extends React.Component {
       this.setState({
         colorDropdowListDefault: visible,
         modalVisible: false
-      }); 
+      });
     } else {
       this.setState({
         sizeDropdowListDefault: visible,
@@ -111,10 +111,11 @@ export class ProductDetailComponent extends React.Component {
     return <View style={styles.dropdownSeparator} key={key} />;
   }
   addToCart = () => {
-    if (this.state.sizeDropdowListDefault != "") {
-      Alert.alert("Please Select Size");
-    } else {
+    //Alert.alert(this.state.sizeDropdowListDefault);
+    if (this.state.sizeDropdowListDefault != "select a size") {
       Alert.alert("Added to Cart");
+    } else {
+       Alert.alert("Please Select Size");
     }
   };
   render() {
@@ -182,7 +183,6 @@ export class ProductDetailComponent extends React.Component {
                 onPress={() => {
                   this.sizeClicked(!this.state.modalVisible);
                 }}
-               
               >
                 <Text
                   style={{
@@ -228,9 +228,9 @@ export class ProductDetailComponent extends React.Component {
               <Modal
                 animationType="slide"
                 transparent={true}
-                supportedOrientations={['portrait','landscape']}
+                supportedOrientations={["portrait", "landscape"]}
                 visible={this.state.modalVisible}
-                style={{height: 300}}
+                style={{ height: 300 }}
                 onRequestClose={() => {
                   alert("Modal has been closed.");
                 }}

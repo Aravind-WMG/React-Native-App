@@ -3,18 +3,13 @@ import App from "./App";
 import { PmpHeaderComponent } from "./app/components/PmpHeaderComponent";
 import { PmpCarouselComponent } from "./app/components/PmpCarouselComponent";
 import { ProductMatricsComponent } from "./app/components/ProductMatricsComponent";
-import { Text, View, StyleSheet, ScrollView, Platform } from "react-native";
+import { Text, View, StyleSheet, ScrollView, Platform, Dimensions } from "react-native";
 import renderer from "react-test-renderer";
 import Enzyme from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
 import { shallow } from "enzyme";
 
 Enzyme.configure({ adapter: new Adapter() });
-
-it("PmpCarouselComponent renders correctly", () => {
-  const rendered = renderer.create(<PmpCarouselComponent />).toJSON();
-  expect(rendered).toMatchSnapshot();
-});
 
 it("PmpHeaderComponent renders correctly", () => {
   const rendered = renderer.create(<PmpHeaderComponent />).toJSON();
